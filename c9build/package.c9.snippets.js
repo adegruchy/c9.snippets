@@ -25,7 +25,7 @@ define("plugins/c9.snippets/__static__",[], function(require, exports, module) {
                 {
                     "type": "snippets",
                     "filename": "javascript.snippets",
-                    "data": "# scope: _\n\nsnippet avery\n\tconsole.log(`${0}`);\n\n"
+                    "data": "# scope: javascript\n\nsnippet avery\n\tconsole.log(`${0}`);\n\n"
                 }
             ].forEach(function(x) {
                 debug.addStaticPlugin(x.type, "c9.snippets", x.filename, x.data, plugin);
