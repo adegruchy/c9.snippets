@@ -19,6 +19,7 @@ define("plugins/c9.snippets/__static__",[], function(require, exports, module) {
         var debug = imports["plugin.debug"];
         var Plugin = imports.Plugin;
         var plugin = new Plugin();
+        console.log('creating plugin');
         plugin.version = "undefined";
         plugin.on("load", function load() {
             [
@@ -30,6 +31,7 @@ define("plugins/c9.snippets/__static__",[], function(require, exports, module) {
             ].forEach(function(x) {
                 debug.addStaticPlugin(x.type, "c9.snippets", x.filename, x.data, plugin);
             });
+            console.log('plugin loaded');
         });
         
         plugin.load("c9.snippets.bundle");
