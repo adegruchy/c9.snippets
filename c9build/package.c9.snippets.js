@@ -1,3 +1,5 @@
+console.log('running plugin file');
+
 define("plugins/c9.snippets/package.c9.snippets", [], {
     "name": "c9.snippets",
     "c9": {
